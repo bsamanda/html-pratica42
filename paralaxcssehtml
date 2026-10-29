@@ -1,0 +1,78 @@
+exercio paralax 
+codigo completo com css
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--DIRECIONA O LINK do css-->>
+    <title>paralax</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--define a class,abre uma class -->
+    <section class="gato">
+        <h1>eu sou muito fofo</h1>
+    </section>
+
+<section class="caixadetexto">
+    <h1>amo gatinhos </h1>
+</section>
+
+<section class="gato2">
+    <h1> gatos sao fofos</h1>
+    </section>
+
+    <section class="caixadetexto2"
+     <h1> gatos maravilhosos</h1>
+     </section>
+
+   
+</body>
+</html>
+
+
+
+css 
+
+/*define a imagem e abre class gato*/
+.gato{
+    
+    background-image: url(gato-domestico-768x512.jpg); 
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*determina o tamho do texto e a cor*/
+h1{
+    text-align: center;
+    color:aqua
+}
+/*define a caixa de texto da imagem*/
+.caixadetexto{
+    background-color: black;
+    padding: 10px;
+    color:aqua !important;
+}
+/*determina a condicçoes da segunda imagem*/
+.gato2{
+    background-image: url(razas-de-gato-gatos-domestico-comun-o-mestizo-caracteristicas-1024x820.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+/*define o tamho da caixa de texto e o tamanho da pagina*/
+.caixadetexto2{
+    background-color: black;
+    padding: 10px;
+     color:aqua !important;
+    
+}
+/*deixa as duas caixas de texto do mesmo tamanho*/
+.caixadetexto,
+.caixadetexto2 {
+    height: 100px;
+    box-sizing: border-box;
+}
